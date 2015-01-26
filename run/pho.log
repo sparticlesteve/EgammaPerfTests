@@ -1,0 +1,119 @@
+==28695== Callgrind, a call-graph generating cache profiler
+==28695== Copyright (C) 2002-2012, and GNU GPL'd, by Josef Weidendorfer et al.
+==28695== Using Valgrind-3.8.0 and LibVEX; rerun with -h for copyright info
+==28695== Command: photonCalibPerf ./xAOD.pool.root 50
+==28695== 
+--28695-- warning: L3 cache found, using its data for the LL simulation.
+==28695== For interactive control, run 'callgrind_control -h'.
+Info in <photonCalibPerf>: Environment initialised for data access
+Info in <photonCalibPerf>: Opening file: ./xAOD.pool.root
+Info in <photonCalibPerf>: Number of events in the file: 5000
+Info in <photonCalibPerf>: Will process 50 events
+EgammaCalibrationAndSmearingTool       INFO In initialize of EgammaCalibrationAndSmearingTool...
+EgammaCalibrationAndSmearingTool       INFO ESModel: es2012c
+EgammaCalibrationAndSmearingTool       INFO ResolutionType: SigmaEff90
+ Initialize eg_resolution 
+Info in <photonCalibPerf>: List of systematics:
+    Nominal
+    EG_RESOLUTION_ALL__1down
+    EG_RESOLUTION_ALL__1up
+    EG_RESOLUTION_LASTRESOLUTIONVARIATION
+    EG_RESOLUTION_MATERIALCALO__1down
+    EG_RESOLUTION_MATERIALCALO__1up
+    EG_RESOLUTION_MATERIALCRYO__1down
+    EG_RESOLUTION_MATERIALCRYO__1up
+    EG_RESOLUTION_MATERIALGAP__1down
+    EG_RESOLUTION_MATERIALGAP__1up
+    EG_RESOLUTION_MATERIALID__1down
+    EG_RESOLUTION_MATERIALID__1up
+    EG_RESOLUTION_NOMINAL
+    EG_RESOLUTION_NONE
+    EG_RESOLUTION_PILEUP__1down
+    EG_RESOLUTION_PILEUP__1up
+    EG_RESOLUTION_SAMPLINGTERM__1down
+    EG_RESOLUTION_SAMPLINGTERM__1up
+    EG_RESOLUTION_ZSMEARING__1down
+    EG_RESOLUTION_ZSMEARING__1up
+    EG_SCALE_ALL__1down
+    EG_SCALE_ALL__1up
+    EG_SCALE_G4__1down
+    EG_SCALE_G4__1up
+    EG_SCALE_L1GAIN__1down
+    EG_SCALE_L1GAIN__1up
+    EG_SCALE_L2GAIN__1down
+    EG_SCALE_L2GAIN__1up
+    EG_SCALE_LARCALIB__1down
+    EG_SCALE_LARCALIB__1up
+    EG_SCALE_LARELECCALIB__1down
+    EG_SCALE_LARELECCALIB__1up
+    EG_SCALE_LARELECUNCONV__1down
+    EG_SCALE_LARELECUNCONV__1up
+    EG_SCALE_LARUNCONVCALIB__1down
+    EG_SCALE_LARUNCONVCALIB__1up
+    EG_SCALE_LASTSCALEVARIATION
+    EG_SCALE_MATCALO__1down
+    EG_SCALE_MATCALO__1up
+    EG_SCALE_MATCRYO__1down
+    EG_SCALE_MATCRYO__1up
+    EG_SCALE_MATID__1down
+    EG_SCALE_MATID__1up
+    EG_SCALE_NOMINAL
+    EG_SCALE_NONE
+    EG_SCALE_PEDESTAL__1down
+    EG_SCALE_PEDESTAL__1up
+    EG_SCALE_PS__1down
+    EG_SCALE_PS__1up
+    EG_SCALE_S12__1down
+    EG_SCALE_S12__1up
+    EG_SCALE_ZEESTAT__1down
+    EG_SCALE_ZEESTAT__1up
+    EG_SCALE_ZEESYST__1down
+    EG_SCALE_ZEESYST__1up
+    EL_SCALE_MOMENTUM__1down
+    EL_SCALE_MOMENTUM__1up
+    PH_SCALE_CONVEFFICIENCY__1down
+    PH_SCALE_CONVEFFICIENCY__1up
+    PH_SCALE_CONVFAKERATE__1down
+    PH_SCALE_CONVFAKERATE__1up
+    PH_SCALE_CONVRADIUS__1down
+    PH_SCALE_CONVRADIUS__1up
+    PH_SCALE_LEAKAGECONV__1down
+    PH_SCALE_LEAKAGECONV__1up
+    PH_SCALE_LEAKAGEUNCONV__1down
+    PH_SCALE_LEAKAGEUNCONV__1up
+Info in <photonCalibPerf>: ===>>> processing event #0 <<<===
+Info in <egammaMVACalib::egammaMVACalib>: Variable that defines particleType not set. Using default formula: ph_Rconv > 0. && ph_Rconv < 800.
+Info in <egammaMVACalib::egammaMVACalib>: Accessing calibration from egammaMVACalib/v1
+Info in <egammaMVACalib::egammaMVACalib>: Reading weights from egammaMVACalib/v1
+PathResolver               INFO Trying to locate egammaMVACalib/v1/MVACalib_unconvertedPhoton.weights.root
+PathResolver               INFO Trying to locate /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/egammaMVACalib/v1/MVACalib_unconvertedPhoton.weights.root
+PathResolver               INFO Trying to locate egammaMVACalib/v1/MVACalib_convertedPhoton.weights.root
+PathResolver               INFO Trying to locate /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/egammaMVACalib/v1/MVACalib_convertedPhoton.weights.root
+Info in <egammaMVACalib::printReadersInfo>: 204 readers created
+Info in <egammaMVACalib::printReadersInfo>: 100 eta bin(s) -- (0.000000 < abs(ph_cl_eta) < 2.470000)
+Info in <egammaMVACalib::printReadersInfo>: 100 energy bin(s) --  (0.000000 < (ph_rawcl_Es1 + ph_rawcl_Es2 + ph_rawcl_Es3)/cosh(ph_cl_eta) < 50000.000000 GeV)
+Info in <egammaMVACalib::egammaMVACalib>: Number of variables: 12
+Info in <egammaMVACalib::InitTree>: Instantiating formulae
+Info in <photonCalibPerf>: ===>>> processing event #12 <<<===
+Info in <photonCalibPerf>: ===>>> processing event #24 <<<===
+Info in <photonCalibPerf>: ===>>> processing event #36 <<<===
+Info in <photonCalibPerf>: ===>>> processing event #48 <<<===
+==28695== 
+==28695== Events    : Ir Dr Dw I1mr D1mr D1mw ILmr DLmr DLmw
+==28695== Collected : 3973605665 1151247517 448496280 16640202 58256558 5065578 23412 974364 2253565
+==28695== 
+==28695== I   refs:      3,973,605,665
+==28695== I1  misses:       16,640,202
+==28695== LLi misses:           23,412
+==28695== I1  miss rate:          0.41%
+==28695== LLi miss rate:           0.0%
+==28695== 
+==28695== D   refs:      1,599,743,797  (1,151,247,517 rd + 448,496,280 wr)
+==28695== D1  misses:       63,322,136  (   58,256,558 rd +   5,065,578 wr)
+==28695== LLd misses:        3,227,929  (      974,364 rd +   2,253,565 wr)
+==28695== D1  miss rate:           3.9% (          5.0%   +         1.1%  )
+==28695== LLd miss rate:           0.2% (          0.0%   +         0.5%  )
+==28695== 
+==28695== LL refs:          79,962,338  (   74,896,760 rd +   5,065,578 wr)
+==28695== LL misses:         3,251,341  (      997,776 rd +   2,253,565 wr)
+==28695== LL miss rate:            0.0% (          0.0%   +         0.5%  )
