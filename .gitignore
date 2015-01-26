@@ -1,0 +1,5 @@
+run/Makefile
+run/callgrind.out.*
+run/xAOD.pool.root
+.gitignore 
+*.swp
