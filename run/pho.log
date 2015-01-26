@@ -1,10 +1,10 @@
-==28695== Callgrind, a call-graph generating cache profiler
-==28695== Copyright (C) 2002-2012, and GNU GPL'd, by Josef Weidendorfer et al.
-==28695== Using Valgrind-3.8.0 and LibVEX; rerun with -h for copyright info
-==28695== Command: photonCalibPerf ./xAOD.pool.root 50
-==28695== 
---28695-- warning: L3 cache found, using its data for the LL simulation.
-==28695== For interactive control, run 'callgrind_control -h'.
+==7266== Callgrind, a call-graph generating cache profiler
+==7266== Copyright (C) 2002-2012, and GNU GPL'd, by Josef Weidendorfer et al.
+==7266== Using Valgrind-3.8.0 and LibVEX; rerun with -h for copyright info
+==7266== Command: photonCalibPerf ./xAOD.pool.root 50
+==7266== 
+--7266-- warning: L3 cache found, using its data for the LL simulation.
+==7266== For interactive control, run 'callgrind_control -h'.
 Info in <photonCalibPerf>: Environment initialised for data access
 Info in <photonCalibPerf>: Opening file: ./xAOD.pool.root
 Info in <photonCalibPerf>: Number of events in the file: 5000
@@ -94,26 +94,26 @@ Info in <egammaMVACalib::printReadersInfo>: 100 eta bin(s) -- (0.000000 < abs(ph
 Info in <egammaMVACalib::printReadersInfo>: 100 energy bin(s) --  (0.000000 < (ph_rawcl_Es1 + ph_rawcl_Es2 + ph_rawcl_Es3)/cosh(ph_cl_eta) < 50000.000000 GeV)
 Info in <egammaMVACalib::egammaMVACalib>: Number of variables: 12
 Info in <egammaMVACalib::InitTree>: Instantiating formulae
-Info in <photonCalibPerf>: ===>>> processing event #12 <<<===
-Info in <photonCalibPerf>: ===>>> processing event #24 <<<===
-Info in <photonCalibPerf>: ===>>> processing event #36 <<<===
-Info in <photonCalibPerf>: ===>>> processing event #48 <<<===
-==28695== 
-==28695== Events    : Ir Dr Dw I1mr D1mr D1mw ILmr DLmr DLmw
-==28695== Collected : 3973605665 1151247517 448496280 16640202 58256558 5065578 23412 974364 2253565
-==28695== 
-==28695== I   refs:      3,973,605,665
-==28695== I1  misses:       16,640,202
-==28695== LLi misses:           23,412
-==28695== I1  miss rate:          0.41%
-==28695== LLi miss rate:           0.0%
-==28695== 
-==28695== D   refs:      1,599,743,797  (1,151,247,517 rd + 448,496,280 wr)
-==28695== D1  misses:       63,322,136  (   58,256,558 rd +   5,065,578 wr)
-==28695== LLd misses:        3,227,929  (      974,364 rd +   2,253,565 wr)
-==28695== D1  miss rate:           3.9% (          5.0%   +         1.1%  )
-==28695== LLd miss rate:           0.2% (          0.0%   +         0.5%  )
-==28695== 
-==28695== LL refs:          79,962,338  (   74,896,760 rd +   5,065,578 wr)
-==28695== LL misses:         3,251,341  (      997,776 rd +   2,253,565 wr)
-==28695== LL miss rate:            0.0% (          0.0%   +         0.5%  )
+Info in <photonCalibPerf>: ===>>> processing event #10 <<<===
+Info in <photonCalibPerf>: ===>>> processing event #20 <<<===
+Info in <photonCalibPerf>: ===>>> processing event #30 <<<===
+Info in <photonCalibPerf>: ===>>> processing event #40 <<<===
+==7266== 
+==7266== Events    : Ir Dr Dw I1mr D1mr D1mw ILmr DLmr DLmw
+==7266== Collected : 3822715394 1112900984 433724363 16629996 56014644 5036223 18738 157868 2225710
+==7266== 
+==7266== I   refs:      3,822,715,394
+==7266== I1  misses:       16,629,996
+==7266== LLi misses:           18,738
+==7266== I1  miss rate:          0.43%
+==7266== LLi miss rate:           0.0%
+==7266== 
+==7266== D   refs:      1,546,625,347  (1,112,900,984 rd + 433,724,363 wr)
+==7266== D1  misses:       61,050,867  (   56,014,644 rd +   5,036,223 wr)
+==7266== LLd misses:        2,383,578  (      157,868 rd +   2,225,710 wr)
+==7266== D1  miss rate:           3.9% (          5.0%   +         1.1%  )
+==7266== LLd miss rate:           0.1% (          0.0%   +         0.5%  )
+==7266== 
+==7266== LL refs:          77,680,863  (   72,644,640 rd +   5,036,223 wr)
+==7266== LL misses:         2,402,316  (      176,606 rd +   2,225,710 wr)
+==7266== LL miss rate:            0.0% (          0.0%   +         0.5%  )

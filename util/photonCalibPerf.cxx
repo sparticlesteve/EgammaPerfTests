@@ -84,8 +84,8 @@ int main(int argc, char* argv[])
   }
 
   // Event progress printout 
-  const int nEvtPrints = 4;
-  const int evtPrintFreq = entries / nEvtPrints;
+  const int nEvtPrints = 5;
+  const int evtPrintFreq = (entries-1) / nEvtPrints + 1;
 
   // Start Callgrind monitoring
   CALLGRIND_START_INSTRUMENTATION;
@@ -128,6 +128,9 @@ int main(int argc, char* argv[])
     }
 
   }
+
+  // Stop Callgrind monitoring
+  CALLGRIND_STOP_INSTRUMENTATION;
 
   return EXIT_SUCCESS;
 }
